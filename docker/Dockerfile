@@ -1,4 +1,4 @@
-FROM docker.io/library/maven:3.8.4-openjdk-8 as mavenrepo
+FROM maven:3.8.4-openjdk-8 as mavenrepo
 
 WORKDIR /app
 COPY cat-alarm cat-alarm
@@ -16,5 +16,7 @@ COPY --from=mavenrepo /app/cat-home/target/cat-home.war /usr/local/tomcat/webapp
 COPY docker/datasources.xml /data/appdatas/cat/datasources.xml
 COPY docker/datasources.sh datasources.sh
 RUN sed -i "s/port=\"8080\"/port=\"8080\"\ URIEncoding=\"utf-8\"/g" $CATALINA_HOME/conf/server.xml && chmod +x datasources.sh
-
+RUN ln -s /lib /lib64 \
+    && apk add --no-cache bash tini libc6-compat linux-pam krb5 krb5-libs
+    
 CMD ["/bin/sh", "-c", "./datasources.sh && catalina.sh run"]

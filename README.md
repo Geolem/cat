@@ -1,8 +1,12 @@
 <img src="https://github.com/dianping/cat/raw/master/cat-home/src/main/webapp/images/logo/cat_logo03.png" width="50%">
 
 **CAT**
- [![GitHub stars](https://img.shields.io/github/stars/dianping/cat.svg?style=social&label=Star&)](https://github.com/dianping/cat/stargazers)
- [![GitHub forks](https://img.shields.io/github/forks/dianping/cat.svg?style=social&label=Fork&)](https://github.com/dianping/cat/fork)
+==========
+[![GitHub stars](https://img.shields.io/github/stars/dianping/cat.svg?style=flat-square&label=Star&)](https://github.com/dianping/cat/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/dianping/cat.svg?style=flat-square&label=Fork&)](https://github.com/dianping/cat/fork)
+![Maven Central](https://img.shields.io/maven-central/v/org.unidal.framework/dal-jdbc)
+![License](https://img.shields.io/github/license/dianping/cat.svg)
+[![Build](https://github.com/dianping/cat/actions/workflows/build.yml/badge.svg)](https://github.com/dianping/cat/actions/workflows/build.yml)
 
 ### CAT 简介 
 
@@ -105,3 +109,7 @@ git clone --depth=1 https://github.com/dianping/cat.git
 我们需要知道你对Cat的一些看法以及建议：
 
 - [**Issues**](https://github.com/dianping/cat/issues)
+
+### Starred 趋势
+
+[![Star History Chart](https://api.star-history.com/svg?repos=dianping/cat&type=Date)](https://star-history.com/#dianping/cat&Date)
